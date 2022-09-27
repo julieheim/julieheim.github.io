@@ -17,22 +17,31 @@ input, button, textarea, select { font: inherit }
 /* Mobiles */
 @media (max-width: 767px) { body { padding: 12% 8% } }
 
-body { font-family: sans-serif; }  
+body { 
+    font-family: sans-serif;
+    background-color: #1f364d 
+}  
 
 h1 {
     font-size: 84px;
+    color: white;
 }
 
 h2 {
     font-size: 36px;
     margin-bottom: 4px;
+    color: deeppink;
 }
 
 h3 {
     font-size: 24px;
-    margin-bottom: 4px;  
+    margin-bottom: 4px; 
+    color: lightgreen; 
 }
 
 p {
     font-size: 18px;
+    color: #81b8cd;
 }
+
+a { color: white }
