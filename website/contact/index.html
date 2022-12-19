@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Web Page Title</title>
-    <meta name="description" content="Sample web page description goes here.">
+    <title>Julie Heim | Contact me</title>
+    <meta name="description" content="If you find my work interresting you can join me.">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
 
 	<!-- Preload large image -->
 
 	<!-- Stylesheets -->
     <link rel="stylesheet" href="https://lunevedy.com/assets/css/lunevedy.min.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZS0Z4V0C0H"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZS0Z4V0C0H');
+    </script>
+    <!-- Google Search Consol-->
+    <meta name="google-site-verification" content="gRGA5WkUapXM8-alsjk_yY_Brecg7fGPnTEvcK2bOQ8" />
+    <link rel="stylesheet" href="assets\css\global.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">    
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img//favicon-32x32.png">    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img//favicon-16x16.png">    
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+        <!-- Google tag (gtag.js) -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
 	<!-- Google Fonts -->
 
@@ -26,15 +47,84 @@
 
 <body>
 
-    <!-- menu and 'hero block' header -->
-    <nav></nav>
-    <header></header>
+        <!-- navigation strats here -->
+    <nav class="theme-dark menu-sticky">
+        <div class="container-menu menu-desktop">
+            <a href="#" class="brand">
+                <img src="../assets/img/logo.png" alt="logo">
+            </a>
+            <div class="container-menu-links">
+
+                <div class="nav-toggle">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                </div>
+
+                <ul class="links-wrapper">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../portfolio/index.html">Portfolio</a></li>
+                    <li><a class="btn btn-outline btn-pill" id="btn-cta" href="../contact/index.html"><span>Contact</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navigation ends here -->
+    
+    <header class=" section-selector-1 theme-light text-center-mobile">
+
+        <div class="container-text">
+            <h1>Contact</h1>
+            <h2>Have a project you'd like to discuss? Let's make something great together! </h2></div>    
+
+    </header>
 
     <!-- main content with sections -->
     <main>
 
         <!-- replace these empty sections with your own or delete them. -->
-        <section></section>
+        
+
+           <section class="container-contact-form w-800px">
+
+            <!-- Contact form starts here -->
+            <form id="contact-form" name="contact-form" accept-charset="utf-8" method="post" action="https://formspree.io/nnnnnnnn">
+
+                <div class="contact-form-upper text-center">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Use the form below to let me know a little more about your objectives and I'll get back to you.</p>
+                </div>
+
+                <!-- Begin contact form fields -->
+
+                <div class="flex-row">
+                    <div class="item-name">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="name" id="full-name" placeholder="Your First and Last Name." required="">
+                    </div>
+                    <div class="item-email">
+                        <label for="email-address">Email</label>
+                        <input type="email" name="_replyto" id="email-address" placeholder="Your Email Address." required="">
+                    </div>
+                </div>
+
+                <div class="flex-row">
+                    <div class="item-textarea">
+                        <label for="message">Message</label>
+                        <textarea rows="5" name="message" id="message" placeholder="Your Message." required=""></textarea>
+                    </div>
+
+                    <div class="item-btn">
+                        <button id="btn-submit" type="submit"><span>Send</span><i class="fas fa-arrow-circle-right"></i></button>
+                    </div>
+                </div>
+
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                <!-- End contact form fields -->
+
+            </form><!-- Contact form ends here -->
+        </section><!-- End container for contact form -->
+    
         <section></section>
         <section></section>
         <section></section>
@@ -42,9 +132,47 @@
     </main>
 
     <!-- footer -->
-    <footer></footer>
+    
+    <footer class="theme-dark text-center-desktop text-center-mobile">
+
+        <h2>Julie Heim</h2>
+
+        <h3>Excellent in digital creation</h3>
+
+        <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="portfolio/index.html">Portfolio</a></li>
+            <li><a href="contact/index.html">Contact</a></li>
+        </ul>
+
+        <ul class="footer-icons">
+            <li><a href="http:/linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="http:/github.com" target="_blank"><i class="fab fa-github-square"></i></a></li>
+        </ul>
+
+        <p class="privacy"><a href="../privacy.html">Privacy &amp; Legal</a></p>
+
+    </footer>
 
     <script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#237afc"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "#237afc"
+        }
+      },
+      "content": {
+        "href": "https://julieheim.github.io/website/privacy.html"
+      }
+    });
+    </script>
+
 
 </body>
 </html>

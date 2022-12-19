@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Web Page Title</title>
-    <meta name="description" content="Sample web page description goes here.">
+    <title>Julie Heim | Portfolio</title>
+    <meta name="description" content="Here are my creation during the semester.">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
 
 	<!-- Preload large image -->
 
 	<!-- Stylesheets -->
     <link rel="stylesheet" href="https://lunevedy.com/assets/css/lunevedy.min.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZS0Z4V0C0H"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZS0Z4V0C0H');
+    </script>
+    <!-- Google Search Consol-->
+    <meta name="google-site-verification" content="gRGA5WkUapXM8-alsjk_yY_Brecg7fGPnTEvcK2bOQ8" />
+    <link rel="stylesheet" href="assets\css\global.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">    
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img//favicon-32x32.png">    
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img//favicon-16x16.png">    
+    <link rel="manifest" href="assets/img/site.webmanifest">
+
+        <!-- Google tag (gtag.js) -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
 	<!-- Google Fonts -->
 
@@ -25,26 +46,160 @@
 
 
 <body>
+    
+    <!-- navigation strats here -->
+    <nav class="theme-dark menu-sticky">
+        <div class="container-menu menu-desktop">
+            <a href="#" class="brand">
+                <img src="../assets/img/logo.png" alt="logo">
+            </a>
 
-    <!-- menu and 'hero block' header -->
-    <nav></nav>
-    <header></header>
+            <div class="container-menu-links">
+
+                <div class="nav-toggle">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                </div>
+
+                <ul class="links-wrapper">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../portfolio/index.html">Portfolio</a></li>
+                    <li><a class="btn btn-outline btn-pill" id="btn-cta" href="../contact/index.html"><span>Contact</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navigation ends here -->
+
+    <!-- header starts here --> 
+
+    <header class=" section-selector-1 theme-light text-center-mobile">
+
+        <div class="container-text">
+            <h1>Portfolio</h1>
+            <h2>Below you can see a selection of my web design and front-end development work.</h2></div>    
+
+    </header>
+    <!-- header ends here -->
+
+
 
     <!-- main content with sections -->
     <main>
 
-        <!-- replace these empty sections with your own or delete them. -->
-        <section></section>
-        <section></section>
-        <section></section>
-        <section></section>
+    <!-- section starts here -->
+
+    <section class="theme-light section-selector-2">        
+
+        <!-- Begin three-column flexbox grid -->
+        <div class="flex-cols-3">
+
+            <div class="col-3">
+                <figure class="photos-zoom photos-brightness">
+                    <a href="../portfolio/smoothies/index.html"><img src="../assets/img/project-smoothie.jpg" alt="smoothies"></a>
+                </figure>
+                <h3>Smooth Smoothies</h3>
+                <p>A multi-column, flexbox-based page layout and hero image with a tinted overlay.</p>
+                <a href="../portfolio/smoothies/index.html" class="btn btn-outline btn-pill btn-uppercase"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="col-3">
+                <figure class="photos-zoom photos-brightness">
+                    <a href="../portfolio/fashion/index.html"><img src="../assets/img/project-fashion.jpg" alt="fashion"></a>
+                </figure>
+                <h3>Snazzy Fashion</h3>
+                <p>A web page for a fashion retailer with a background video that plays in a continuous loop.</p>
+                <a href="../portfolio/fashion/index.html" class="btn btn-outline btn-pill btn-uppercase"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="col-3">
+                <figure class="photos-zoom photos-brightness">
+                    <a href="../portfolio/project-hero/index.html"><img src="../assets/img/project-hero.png" alt="hero"></a>
+                </figure>
+                <h3>Hero Block Gallery</h3>
+                <p>A gallery of hero block elements with split-screen layouts and duotone images.</p>
+                <a href="../portfolio/project-hero/index.html" class="btn btn-outline btn-pill btn-uppercase"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+            </div>
+
+
+            <div class="col-3">
+                <figure class="photos-zoom photos-brightness">
+                    <a href="../portfolio/project-van-gogh/index.html"><img src="../assets/img/project-van-gogh.png" alt="Van Gogh"></a>
+                </figure>
+                <h3>Vincent van Gogh</h3>
+                <p>A summary of the life and work of artist Vincent van Gogh with an embedded and responsive video from YouTube.</p>
+                <a href="../portfolio/project-van-gogh/index.html" class="btn btn-outline btn-pill btn-uppercase"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="col-3">
+                <figure class="photos-zoom photos-brightness">
+                    <a href="../portfolio/project-multi-column/index.html"><img src="../assets/img/project-multi-col.png" alt="hero multi column"></a>
+                </figure>
+                <h3>Multi-column Layouts</h3>
+                <p>A gallery of multi-column, reponsive layouts.</p>
+                <a href="../portfolio/project-multi-column/index.html" class="btn btn-outline btn-pill btn-uppercase"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="col-3">
+                <figure class="photos-zoom photos-brightness">
+                    <a href="../portfolio/crypto-wallet/index.html"><img src="../assets/img/project-crypto-wallet.jpg" alt="crypto wallet"></a>
+                </figure>
+                <h3>Crypto Wallet</h3>
+                <p>A dark-themed responsive single-page website for a fictitious crypto wallet.</p>
+                <a href="../portfolio/crypto-wallet/index.html" class="btn btn-outline btn-pill btn-uppercase"><span>View project</span><i class="fas fa-arrow-right"></i></a>
+            </div>
+
+        </div>
+        <!-- End three-column flexbox grid -->
+
+    </section>
+
+    <!-- section ends here -->
+
 
     </main>
 
-    <!-- footer -->
-    <footer></footer>
+    <footer class="theme-dark text-center-desktop text-center-mobile">
+
+        <h2>Julie Heim</h2>
+
+        <h3>Excellent in digital creation</h3>
+
+        <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="../contact/index.html">Contact</a></li>
+        </ul>
+
+        <ul class="footer-icons">
+            <li><a href="http:/linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="http:/github.com" target="_blank"><i class="fab fa-github-square"></i></a></li>
+        </ul>
+
+        <p class="privacy"><a href="../privacy.html">Privacy &amp; Legal</a></p>
+
+    </footer>
 
     <script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#237afc"
+        },
+        "button": {
+          "background": "#fff",
+          "text": "#237afc"
+        }
+      },
+      "content": {
+        "href": "https://julieheim.github.io/website/privacy.html"
+      }
+    });
+    </script>
+
 
 </body>
 </html>
